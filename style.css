@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box
+  }
+  
+  
+  
+  /* === HEADER === */
+  header {
+    background: url(https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg) no-repeat 70%;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: table;
+    color: white;
+  }
+  
+  header .table-cell {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  header .table {
+    width: 100%;
+    background: hsla(100,0%,0%,.6);
+    text-align: center;
+    font-family: "Libre Baskerville", serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: table
+  }
+  
+  header article {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  /* == header items == */
+  header h2 {
+    padding-bottom: 0.1rem;
+    padding-top: 1rem
+  }
+  
+  header h2::after {
+    display: block;
+    content: "";
+    background: white;
+    height: 0.01rem;
+    width: 13rem;
+    margin: .7rem auto
+  }
+  
+  header h1 {
+    font-family: "Great Vibes", cursive;
+    font-size: 3.1rem;
+    color: #C5B185;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem
+  }
+  
+  header p {
+    padding-bottom: 1rem
+  }
+  
+  header h2, header p {
+    letter-spacing: 0.2rem
+  }
+  
+  header p::before, header p::after {
+    display: inline-block;
+    content: "";
+    background: white;
+    height: 0.01rem;
+    width: 1.5rem;
+    vertical-align: middle;
+    margin: 0 .5rem
+  }
+  
+  
+  
+  /* === LIGHT DIV === */
+  .light {
+    background: url(https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png) repeat center;
+    width: 100%;
+    text-align: center;
+    color: #444349;
+    display: inline-block;
+    padding-bottom: 2rem;
+    
+  }
+  
+  a {
+    color: #bd806e;
+    text-decoration: none
+  }
+  
+  a:hover {
+    color: #eda087;
+    transition: all 0.15s ease-in-out
+  }
+  
+  .light h1 {
+    font-family: "Great Vibes", cursive;
+    font-size: 3.1rem;
+    padding: 2.5rem
+  }
+  
+  .light img {
+    height: 7.5rem;
+    margin: 2rem
+  }
+  
+  .light p {
+    font-size: 1.2rem;
+    line-height: 1.55;
+    font-family: "Libre Baskerville";
+  }
+  
+  
+  
+  /* === DARK DIV === */
+  .dark {
+    background: hsla(100,0%,0%,.6);
+    width: 100%;
+    color: #d2ba87;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem
+  }
+  
+  .dark h1 {
+    font-weight: normal
+  }
+  
+  .dark p {
+    text-align: start;
+    font-family: Mulish;
+  }
+  
+  .dark-container {
+    padding-bottom: 0
+  }
+  
+  
+  
+  /* === LOCAL FORMS === */
+  #locations article::after {
+    display: block;
+    content: "";
+    background: #444349;
+    height: .2rem;
+    width: 6.5rem;
+    margin: 2rem auto
+  }
+  
+  #locations h2 {
+    text-transform: capitalize;
+    font-family: "Libre Baskerville";
+    font-size: 1.5rem;
+    font-weight: 1000;
+  }
+  
+  #locations p {
+    font-family: "Mulish";
+    font-weight: normal;
+  }
+  
+  #program .italic {
+    font-style: italic;
+    padding-bottom: 1.8rem
+  }
+  
+  #questions-answers h2 {
+    text-transform: capitalize;
+    font-family: "Libre Baskerville";
+    font-size: 1.5rem;
+    padding-bottom: 2rem
+  }
+  
+  #questions-answers {
+    padding-bottom: 0.1rem
+  }
+  
+  #questions-answers .question {
+    font-weight: 1000;
+    padding-bottom: 0.5rem
+  }
+  
+  #questions-answers p {
+    padding-bottom: 1.2rem
+  }
+  
+  #questions-answers article::after {
+    display: block;
+    content: "";
+    background: #d2ba87;
+    height: 0.2rem;
+    width: 13.8rem;
+    margin: auto;
+    margin-bottom: 1.8rem
+  }
+  
+  #contact p {
+    padding-bottom: 2rem
+  }
+  
+  
+  
+  /* === FOOTER === */
+  footer {
+    background: #606060;
+    color: white;
+    font-family: "Mulish", sans-serif;
+    text-align: center;
+    padding: 1rem .8rem
+  }
+  
+  
+  
+  /* === ASZTALI NÉZET === */
+  @media (min-width: 768px) {
+    
+    /* == header == */
+    header .table {
+      width: 50%;
+      margin: auto;
+      font-weight: normal
+    }
+    
+    header h2 {
+      text-transform: uppercase;
+    }
+    
+    header h1 {
+      font-size: 7rem;
+    }
+    
+    /* == locations == */
+    #locations {
+      padding-bottom: 5rem
+    }
+    
+    #locations article {
+      display: inline-block;
+      width: 24%;
+      margin: 0 2rem
+    }
+    
+    #locations article::after {
+      display: none
+    }
+    
+    /* == program == */
+    #program article {
+      display: inline-block;
+      margin: 0 auto;
+      width: 40%
+    }
+    
+    /* == questions and answers == */
+    #questions-answers {
+      padding: 0 0 3rem
+    }
+    
+    #questions-answers article {
+      display: inline-block;
+      vertical-align: top;
+      text-align: left;
+      width: 20%;
+      margin: 0 6.4%
+    }
+    
+    #questions-answers article::after {
+      display: none
+    }
+  }
